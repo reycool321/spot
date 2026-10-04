@@ -1,13 +1,16 @@
-# Publication checks
+# Validation and publication review
 
-- All included Python files compiled successfully.
-- Windows sender PowerShell parsing and embedded C# compilation passed.
-- Supplied loot fixture harness: 4/4 assertions passed.
-- Known private network identifiers were absent from publishable text files.
-- Screenshots, runtime logs, saved client state, bytecode, backups, and the private
-  historical PDF were excluded from the publication directory.
+Updated source files were scanned for credentials, personal network addresses,
+user paths, session identifiers, and runtime data. Real tailnet addresses were
+replaced with documentation examples or loopback; sender session identifiers
+were replaced with examples. Private Hermes history counts were removed.
+The supplied archive PDF and historical REPORT/DEVPOST were excluded.
 
-No live screen capture, remote mouse/keyboard input, vision-model targeting, or
-end-to-end network test was performed. The supplied loot harness largely duplicates
-parsing logic; its result does not establish progressive learning or full brain
-integration correctness.
+Python sources compile. Native sender parses in PowerShell and its embedded C#
+compiles. No sender or remote-input loop was started during this review.
+CALIBRATION.md preserves user-reported live results for one display configuration;
+this review did not independently repeat the remote calibration.
+
+Known limitation: receiver.py stamps results with its active session rather than
+validating the sender-supplied session. Late results can therefore be mislabeled.
+This is an implementation issue, not a credential leak.

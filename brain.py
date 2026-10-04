@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""petcam brain: a command-driven pet daemon. Heist flavor  - the
+"""petcam brain: a standalone, Hermes-independent daemon. Heist flavor  - the
 pet is the crew's *spotter* at HQ, watching the mark's screen (the feed).
 
 Watches the petcam receiver (/state) and drives the Omarchy pet:

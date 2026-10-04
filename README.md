@@ -13,7 +13,7 @@ or a user chooses actions; the scripts handle transport and execution.
 - Native Windows sender: screenshots and remote input.
 - Optional ffmpeg sender/bootstrap, viewer, mock feed, and synthetic loot fixtures.
 
-Clicking precision remains under investigation. Progressive learning and an
+Move-only calibration and a new-tab click were reported successful on one 1920x1080 desktop with a 1280x720 feed. Other display configurations still require calibration. Progressive learning and an
 independent learned-routine runner are not implemented. Separate script processes
 do not make the current Hermes-assisted workflow autonomous.
 
