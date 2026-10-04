@@ -21,8 +21,4 @@ to exercise the fallback path).
 
 **4/4 assertions passed.**
 
-## Live (non-fixture) confirmation
 
-Against the real `~/.hermes/sessions/` store the pet reported:
-`loot lifted: 8 user turns in 229 msgs, 71 intel files (464kb)` —
-data-only read, no Hermes process in the loop.
